@@ -12,6 +12,7 @@ header{
     transition-property: background; 
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
+    z-index: 2;
 }
 
 nav{
@@ -111,7 +112,6 @@ header:hover{
 .portrait{
     position: relative;
     height: 100vh;
-    z-index: -1;
 }
 
 .portrait .img{
@@ -121,7 +121,7 @@ header:hover{
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.5;
-    z-index: -2;
+    z-index: -1;
 }
 
 .text_n_button{
@@ -132,7 +132,7 @@ header:hover{
     width: 100vw;
 
     position: absolute;
-    top: 40vh;
+    top: 30vh;
 
     text-align: center;
 
@@ -162,8 +162,14 @@ header:hover{
     background-color: rgb(0, 160, 250);
     border-color: transparent;
     border-radius: 10px;
+
+    transition: transform 0.3s;
+    transition-timing-function: ease-in-out;
 }
 
+.text_n_button button:hover{
+    transform: scale(1.1);
+}
 
 footer{
     display: flex;
