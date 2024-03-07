@@ -29,7 +29,7 @@ nav{
 }
 
 header:hover{
-    background: rgba(115, 222, 255, 100%);
+    background: rgba(255, 255, 255, 100%);
 
     .icon_n_title b i, .nav__items ul li a{
         color: #000000;
